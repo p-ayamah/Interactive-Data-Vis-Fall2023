@@ -9,5 +9,75 @@
     <h1>Hello World!</h1>
     <h3>Section 1 | Tutorial 1 | Getting Started</h3>
     <p>Welcome to Interactive Data Visualization Tutorials! </p>
+
+    <svg width = "1000", height = "1000">
+
+      //rectangles
+      <rect width="50", height = "50", x = "10", y = "10", fill = 'blue' > </rect>
+      <rect width="50", height = "50", x = "70", y = "10" , fill = 'green'> </rect>
+      <rect width="50", height = "50", x = "10", y = "70", fill = "red" > </rect>
+      <rect width="105", height = "105", x = "35", y = "35", fill = "rgba(0,255,10, 0.6)" > </rect>
+
+      //Lines
+
+      <line x1 = "0" y1 = "250" x2 = "650" y2 = "250" stroke-width = 5 stroke = "black"></line>
+
+      <line x1 = "0" y1 = "0" x2 = "650" y2 = "0" stroke-width = 2 stroke = "black"></line>
+
+      //circles
+<circle cx = "400", cy = "50", r = "40" stroke-width = '3', stroke = 'black' fill = 'none'></circle>
+<circle cx = "400", cy = "90", r = "40" stroke-width = '3', stroke = '#cc9900' fill = 'none'></circle>
+<circle cx = "240", cy = "80", r = "40" stroke-width = '3', stroke = 'black' fill = 'rgba(255, 51, 153, 0.7)'></circle>
+
+
+
+//pseudo scatter plot
+<line x1 = "10", y1="360", x2 = "10", y2 = 500 stroke = "black", stroke-width = "5"></line>
+
+<line x1 = "7", y1="500", x2 = "160", y2 = 500 stroke = "black", stroke-width = "5"></line>
+<text x="30", y="520">Scatter plot</text>
+<g>
+
+<g>
+  <circle cx = "30", cy = "480", r = "5" stroke-width = '3', stroke = 'black' fill = 'none'></circle>
+
+  <circle cx = "50", cy = "450", r = "5" stroke-width = '3', stroke = 'black' fill = 'none'></circle>
+
+  <circle cx = "70", cy = "430", r = "5" stroke-width = '3', stroke = 'black' fill = 'none'></circle>
+
+  <circle cx = "100", cy = "400", r = "5" stroke-width = '3', stroke = 'black' fill = 'none'></circle>
+</g>
+
+//pseudo bar graph
+<line x1 = "200", y1="360", x2 = "200", y2 = 500 stroke = "black", stroke-width = "5"></line>
+
+<line x1 = "197", y1="500", x2 = "360", y2 = 500 stroke = "black", stroke-width = "5"></line>
+
+<text x="220", y="520">Bar Graph</text>
+<g>
+  <rect width="20", height = "100", x = "210", y = "397", fill = "rgb(10,55,200)" > </rect>
+
+  <rect width="20", height = "120", x = "235", y = "377", fill = "rgb(10,55,200)" > </rect>
+
+  <rect width="20", height = "120", x = "260", y = "377", fill = "rgb(10,55,200)" > </rect>
+
+  <rect width="20", height = "60", x = "285", y = "437", fill = "rgb(10,55,200)" > </rect>
+
+ 
+
+</g>
+
+
+//pseudo line 
+<line x1 = "400", y1="360", x2 = "400", y2 = 500 stroke = "black", stroke-width = "5"></line>
+
+<line x1 = "397", y1="500", x2 = "560", y2 = 500 stroke = "black", stroke-width = "5"></line>
+
+
+<path d="M405 495 L450 400 L530 450 L550 430" fill = "none", stroke = "black", stroke-width="5"></path>
+<text x="410", y="520">Line Chart</text>
+
+  </svg>
+
   </body>
 </html>
