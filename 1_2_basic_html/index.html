@@ -5,12 +5,83 @@
   <title>Interactive Data Visualization Tutorial</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
   <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Hello World!</h1>
+  <h1>Profile of Selected West African Countries</h1>
   <h3>Section 1 | Tutorial 2 | Basic HTML</h3>
+
+  <div id = "mytable">
   <table>
-    <!-- Add your table data here -->
+    <caption>West African Countries, Capital, Currency, and Flag</caption>
+    <tr>
+      <th>Country</th>
+      <th>Capital</th>
+      <th>Currency</th>
+      <th>Flag</th>
+    </tr>
+    <tr>
+      <td>Ghana</td>
+      <td>Accra</td>
+      <td>Cedi</td>
+      <td class="myclass"><img src="https://flagpedia.net/data/flags/w580/gh.webp"></td>
+    </tr>
+    <tr>
+      <td>Nigeria</td>
+      <td>Abuja</td>
+      <td>Naira</td>
+      <td class="myclass"><img src="https://flagpedia.net/data/flags/w580/ng.webp"></td>
+    </tr> 
+    <tr>
+      <td>Togo</td>
+      <td>Lome</td>
+      <td>CFA Franc</td>
+      <td class="myclass"><img src="https://flagpedia.net/data/flags/w580/tg.webp"></td>
+    </tr> 
   </table>
+
+<ul>
+  <button onclick="highlightRow('Ghana')">Ghana</button>
+  <button onclick="highlightRow('Nigeria')">Nigeria</button>
+  <button onclick="highlightRow('Togo')">Togo</button>
+</ul>
+  <script>
+      // Function to highlight a row by country name
+      function highlightRow(countryName) {
+          const table = document.getElementById('mytable');
+          const rows = table.getElementsByTagName('tr');
+          
+          // Loop through the rows and find the one with the matching country name
+          for (let i = 0; i < rows.length; i++) {
+              const cells = rows[i].getElementsByTagName('td');
+              if (cells.length > 0 && cells[0].textContent === countryName) {
+                  // Add the highlight class to the row
+                  rows[i].classList.add('highlight');
+                  
+                  // Remove the highlight class after 0.5 seconds
+                  setTimeout(() => {
+                      rows[i].classList.remove('highlight');
+                  }, 100);
+              }
+          }
+      }
+  </script>
+
+
+</div>
+<svg width = "1000", height = "600"> 
+  <rect width="100", height = "100", x = "2", y = "40", fill = 'green' > </rect>
+  <rect width="100", height = "100", x = "2", y = "180", fill = 'green' > </rect>
+  <rect width="100", height = "100", x = "142", y = "40", fill = 'green' > </rect>
+  <rect width="100", height = "100", x = "142", y = "180", fill = 'green' > </rect>
+  <rect width="355", height = "100", x = "282", y = "40", fill = 'green' > </rect>
+  <rect width="355", height = "100", x = "282", y = "180", fill = 'green' > </rect>
+
+
+  <circle cx = "122", cy = "160", r = "100" stroke-width = '10', stroke = 'rgba(255, 0, 0, 0.5)' fill = 'none'></circle>
+
+</svg>
 </body>
 </html>
