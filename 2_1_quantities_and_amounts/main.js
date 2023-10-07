@@ -74,7 +74,7 @@ d3.csv('../data/MoMA_TopTenNationalities.csv', d3.autoType)
       .attr("text-anchor", "middle")
       .text("Nationality");
 
-    // Add chart title
+    /* Add chart title*/
     svg.append("text")
       .attr("x", width / 2 + margin.left)
       .attr("y", margin.top+5 )
