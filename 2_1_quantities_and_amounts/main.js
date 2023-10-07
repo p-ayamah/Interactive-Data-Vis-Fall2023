@@ -5,7 +5,7 @@ const height = 800 - margin.top - margin.bottom;
 
 d3.csv('../data/MoMA_TopTenNationalities.csv', d3.autoType)
   .then(data => {
-    console.log("data", data);
+
 
     // Define X Scale
     const xScale = d3.scaleLinear()
