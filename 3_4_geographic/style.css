@@ -17,12 +17,3 @@ h3 {
 p {
   font-size: 1em;
 }
-
-#tooltip {
-  display: block;
-  height: 50px;
-}
-
-path.state {
-  stroke: black;
-}
