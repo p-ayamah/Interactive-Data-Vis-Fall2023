@@ -3,7 +3,7 @@ const margin = { top: 20, right: 30, bottom: 40, left: 90 };
 const width = window.innerWidth * 0.8 - margin.left - margin.right;
 const height = 800 - margin.top - margin.bottom;
 
-d3.csv('../data/MoMA_TopTenNationalities.csv', d3.autoType)
+d3.csv('../data/MoMA_topTenNationalities.csv', d3.autoType)
   .then(data => {
 
 
