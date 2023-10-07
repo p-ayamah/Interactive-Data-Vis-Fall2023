@@ -45,8 +45,8 @@ d3.csv('../data/MoMA_TopTenNationalities.csv', d3.autoType)
       .attr('class', 'bar-label')
       .attr('x', d => xScale(d.Count) + 5)
       .attr('y', d => yScale(d.Nationality) + yScale.bandwidth() / 2)
-      .attr('dy', '0.35em') // Adjust the vertical alignment
-      .attr('fill', 'black') // Set text color to black
+      .attr('dy', '0.35em')
+      .attr('fill', 'black') 
       .text(d => d.Count);
 
     // Creating axes
