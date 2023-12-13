@@ -1,0 +1,48 @@
+
+html {
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  padding: 1em;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0.25em 0;
+}
+
+h3 {
+  font-family: 'Oxanium', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 3em;
+  margin: 0.25em 0;
+}
+
+p {
+  font-size: 1em;
+}
+
+.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: lightsteelblue;
+  border: 0px;
+  pointer-events: none;
+}
+
+#container {
+  background-image: linear-gradient(0deg, #f9f9f9 50%, #f4f3f3 50%);
+  background-size: 150px 150px;
+}
+
+
