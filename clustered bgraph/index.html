@@ -1,25 +1,62 @@
 <!DOCTYPE html>
-  <head>
-    <meta charset="utf-8">
-    <title>p_ayamah</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <h3>Gender Dimension of MoMA Artifacts Collected Over Time</h3>
-    
-    <div id="pie_container"></div>
-    
-    <h4>Submitted by Paul Ayamah</h4>
+<html lang="en">
 
-    <div id="container"></div>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="main.js"></script>
-    <script src="main_pie.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>p_ayamah</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200&family=Titillium+Web:wght@300&display=swap"
+    rel="stylesheet">
+</head>
 
-    <h4>Submitted by Paul Ayamah</h4>
-  </body>
+<body>
+  <h3>Gender Dimension of the MoMA Artifacts Collected Over Time</h3>
+  <h4>Submitted by Paul Ayamah</h4>
+
+  <div class="row">
+    <div class="column">  <h5>
+    <p>Introduction</p> 
+    The Museum of Modern Art (MoMA) stands as a prominent art institution situated in New York City. Renowned for its pivotal role in the cultivation and curation of modern art, MoMA is widely recognized as one of the preeminent and most impactful museums dedicated to modern art globally. Its extensive collection provides a comprehensive panorama of both modern and contemporary artistic expressions, encompassing diverse mediums such as architecture, design, drawing, painting, sculpture, photography, prints, illustrated and artist's books, film, and electronic media.
+    </h5></div>
+    <div class="column"><h5>
+      <br></br> 
+      Within the MoMA Library, an assemblage of approximately 300,000 books and exhibition catalogs, along with over 1,000 periodical titles, is available. The library also houses an extensive collection of more than 40,000 ephemera files pertaining to individual artists and groups. In addition, the museum's archives safeguard invaluable primary source materials that offer insights into the rich history of modern and contemporary art.  </h5></div>
+  </div>
+
+
+
+  <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+
+    <div id="pie_chart">
+    <h5>
+    The pie chart above shows that overall, the MoMA collections have been dominated by artifacts associated with males. <br>To see interactivity, move mouse over the chart or refresh page. Same applies to the clustered bar chart below</br>
+    </h5>
+    </div>
+
+
+  <div id="container"></div>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <script src="main.js"></script>
+  <script src="main_pie.js"></script>
+
+  <div class="row">
+    <div class="column">  <h5>
+ 
+        The clustered bar graphs above present a detailed representation of the data initially depicted in the pie chart. The chart offers a more nuanced view of the data across three centuries. Collections prior to 1800 were consolidated into one group, and a similar grouping was applied to collections spanning the subsequent 100 years from 1801 to 1900. Subsequently, the data was organized in ten-year intervals up to the present period.
+
+   </h5></div>
+    <div class="column"><h5>
+         It is noteworthy that not only do male artifacts dominate the overall collections, but this trend also persists in each of the ten-year periods presented. However, the degree of dominance is not static; it peaks in the 1960s and then gradually declines relative to other classes. Equally noteworthy is the steady rise of the female category from the 1960s to 2010 before experiencing a decline, a period coinciding with the steady decrease in the male category. Overall, it is evident that the artifacts collected over time have exhibited a consistent decline since 1960.
+   </h5></div>
+
+  </div>
+
+  <div id = "end"> THE END </div>
+
+</body>
+
 </html>
